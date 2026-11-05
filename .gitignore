@@ -1,0 +1,9 @@
+.env
+.env.*
+node_modules/
+contracts/out/
+contracts/cache/
+contracts/broadcast/*/31337/
+*.db
+dist/
+!.env.example
