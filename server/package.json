@@ -1,0 +1,19 @@
+{
+  "name": "vanishing-bazaar-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "arkiv:smoke": "node --env-file=../.env scripts/arkiv-smoke.mjs",
+    "start": "node --env-file=../.env src/index.mjs",
+    "e2e:relay": "node --env-file=../.env scripts/e2e-relay.mjs",
+    "dev:fund": "node --env-file=../.env scripts/dev-fund.mjs",
+    "seed:stall": "node --env-file=../.env scripts/seed-stall.mjs"
+  },
+  "dependencies": {
+    "@arkiv-network/sdk": "1.0.1",
+    "@hono/node-server": "^1.19.18",
+    "@worldcoin/idkit-core": "4.6.0",
+    "hono": "^4.13.16",
+    "viem": "^2.57.16"
+  }
+}
